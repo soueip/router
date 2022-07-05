@@ -1,0 +1,169 @@
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.list{
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+
+}
+.movie-card{
+  width: 30%;
+  margin-inline: auto;
+  height: 420px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 8px;
+position: relative;
+
+}
+.movie-card img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover ;
+}
+.movie-card h1{
+text-align: center;
+color: brown;
+font-size: 30px;
+}
+.movie-card p{
+  text-align: center;
+  padding: 2%;
+  font-size: 14px;
+}
+.star {
+  height: 50px;
+  width: 50px;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  text-align: center;
+  background: orange;
+  color: white;
+  position: absolute;
+  top:10px;
+  right: 10px;
+  font-size: 15px;
+}
+
+.filter{
+  width: 40%;
+  margin-inline: auto;
+  display: flex;
+}
+.filter >*{
+  width: 100%;
+  margin: 5px;
+  padding: 1.5%;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid orange;
+}
+.modal-bg{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.53);
+  position: fixed;
+  z-index: 9999;
+  top:0;
+
+}
+.modal-content{
+  width: 40%;
+  margin: auto;
+  height: 350px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+.close-btn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 50px auto 20px auto;
+}
+.inputs >*{
+  width: 80%;
+  margin: 5px auto;
+  height: 25px;
+  outline:1px solid orange;
+  border: none;
+}
+.add-btn{
+  background-color: rgb(92, 215, 92);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ajout{
+  width:200px;
+  margin: 0 auto;
+  background-color: orange ;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  padding: 1%;
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+}
